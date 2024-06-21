@@ -1,9 +1,9 @@
-import TopBar from '../components/TopBar'
+import { Typography } from '@mui/material'
 
 const HomePage = () => {
   return (
     <>
-      Hello this is Hoang
+      <Typography>Hello this is Hoang</Typography>
     </>
   )
 }

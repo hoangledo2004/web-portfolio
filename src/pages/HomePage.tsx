@@ -1,8 +1,12 @@
 import React from 'react'
+import { Box, CardHeader } from '@mui/material'
+import TopBar from '../components/TopBar'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <TopBar/>
+    </>
   )
 }
 

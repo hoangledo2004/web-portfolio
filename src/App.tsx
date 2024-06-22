@@ -12,9 +12,9 @@ function App() {
       <TopBar/>
       <Routes>
         <Route path="/profile" element={<HomePage />} />
-        <Route path="/plan" element={<ContactPage />} />
-        <Route path="/privacy-policy" element={<ShowcasesPage />} />
-        <Route path="/terms-and-conditions" element={<ProjectsPage />} />
+        <Route path="/showcases" element={<ShowcasesPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   )

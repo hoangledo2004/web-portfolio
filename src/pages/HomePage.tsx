@@ -7,11 +7,11 @@ const HomePage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <>
-    <Container sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center', padding: '20px' }}>
+    
+    <Container sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center' }}>
       {/* Left Section (Introduction) */}
       <Box sx={{ flex: '1 1 100%' }}>
-        <h3 style={{fontFamily:'Roboto Slab, san-serif', fontWeight:'bold', fontSize: '1.6rem'}} >
+        <h3 style={{fontFamily:'Roboto Slab, san-serif', fontWeight:'bold', fontSize: '1.6rem', marginBottom: 10}} >
           Hello,
           <br/>
           My name is Hoang.
@@ -36,7 +36,7 @@ const HomePage = () => {
         <img src="path_to_your_profile_picture.jpg" alt="Profile" style={{ width: '100%', borderRadius: '50%' }} />
       </Box>
     </Container>
-    </>
+    
   );
 }
 

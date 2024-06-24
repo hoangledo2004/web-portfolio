@@ -1,8 +1,11 @@
+import { Container } from '@mui/material'
 import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <Container>
+      Contact
+    </Container>
   )
 }
 

@@ -1,5 +1,5 @@
-//import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
+//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 import ShowcasesPage from './pages/ShowcasesPage'
@@ -8,15 +8,28 @@ import TopBar from './components/TopBar'
 
 function App() {
   return (
-    <Router>
-      <TopBar/>
-      <Routes>
-        <Route path="/profile" element={<HomePage />} />
-        <Route path="/showcases" element={<ShowcasesPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </Router>
+    <>
+      <div className="container">
+        <TopBar />
+        <section className='homepage'>
+          <HomePage />
+        </section>
+
+        <section className='showcases'>
+          <ShowcasesPage />
+        </section>
+
+        <section className='projects'>
+          <ProjectsPage />
+        </section>
+
+        <section className='contact'>
+          <ContactPage />
+        </section>
+
+      </div>
+    </>
+
   )
 }
 
